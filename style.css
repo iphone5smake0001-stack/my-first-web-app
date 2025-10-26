@@ -1,0 +1,129 @@
+/* ブラウザで設定されているスタイルのリセット・共通設定 */
+/* 消さないでください */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+form,
+input,
+textarea,
+select,
+button {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+/* スタイルのリセット終了 */
+
+/* サイドバーとメインコンテンツを包むための要素のスタイルを書いてください */
+
+
+/* サイドバーに関連するスタイルを書いてください */
+.sidebar{
+ /* 横幅が256px */
+ width: 256px;
+ /* バックグラウンドカラー */
+ background-color: #f5f5f5;
+ /* 右側に1pxの線を引く */
+ border-right: 1px solid #e0e0e0;
+ /* 親要素の高さに合わせる */
+ height: 100%;
+ /* 子要素をflexboxで表示 */
+ display: flex;
+ /* 子要素を立て向きに並べる */
+ flex-direction: column;
+ /* サイドバーが縮まないようにする */
+ flex-shrink: 0;
+}
+
+.sidebar-header{
+  /* 余白（padding）を 20px に設定してください */
+  padding: 20px;
+  /* ヘッダーの下にボーダーを 1px の太さで、色を #e0e0e0 で設定してください */
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.sidebar-home{
+ /* フォントサイズを 1.25rem に設定してください */
+ font-size: 1.25rem;
+ /* フォントの太さを 600 に設定してください */
+ font-weight: 600;
+ /* 文字色を #4f7cac に設定してください */
+ color:#4f7cac;
+ /* ホームリンクを display: flex で配置し、要素を縦方向の中央揃え（align-items: center）にしてください */
+ display: flex;
+ align-items: center;
+ /* アイコンとテキストの間に 8px の間隔（gap）を設定してください */
+ gap: 8px;
+ /* ホームリンクのテキスト装飾（text-decoration）を削除してください */
+ text-decoration: none;
+}
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* メインコンテンツに関連するスタイルを書いてください */
+
+.main-content{
+ flex: 1;
+}
+
+.section-header{
+ background-color: #ffffff;
+ padding: 32px;
+ border-bottom: 1px solid #e0e0e0;
+ text-align: center;
+}
+
+.profile-circle{
+  width: 96px;
+  height: 96px;
+  background-color: #4f7cac;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 24px;
+}
+
+.profile-circle span{
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+.section-title{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2f2f2f;
+  margin-bottom: 8px;
+}
+
+.section-subtitle{
+  font-size: 1.125rem;
+  color: #757575;
+  margin-bottom: 24px;
+}
+
+.section-description{
+  max-width: 672px;
+  margin: 0 auto;
+  padding: 32px;
+  color: #757575;
+}
+
+.section-description p{
+  margin-bottom: 16px;
+}
